@@ -4,7 +4,7 @@ import { HttpHeaders } from '@angular/common/http';
 
 //Operador Map for filter information received
 import {map} from 'rxjs/operators';
-import { url } from 'inspector';
+//import { url } from 'inspector';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class SpotifyService {
    getQuery(query:string) {
      const url=`https://api.spotify.com/v1/${query}`;
      const headers = new HttpHeaders({
-      'Authorization':'Bearer BQBzodESnEGrXZWsLPIFTDGXSeZvZHr8cJrHDWvd9kFIx1ufKTa9b1Vq03S7pZGXxD0xblnL_c38VgBbi5g'
+      'Authorization':'Bearer BQDz64kOGgbadSdRjH5GIiDBw550nHolgsxU2Dceai0OgeDt2RHz4fd6OkJScdXHeAGiJA8LXWz31MCgihI'
     });
     return this.http.get(url, {headers});
    }

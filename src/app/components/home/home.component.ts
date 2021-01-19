@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   newSongs: any[]=[];
   loading:boolean;
   error:boolean=false;
-  mensajeError:string;
+  mensajeError:string='';
   
   constructor( private spotify:SpotifyService) {
 
