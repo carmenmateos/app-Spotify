@@ -1,0 +1,27 @@
+<!-- <ul>
+    <li *ngFor="let country of countries">
+        {{country.name}}-{{country.population | number}}
+    </li>
+</ul> -->
+<!-- Http client -->
+
+<app-loading *ngIf="loading"></app-loading>
+<div *ngIf="error" class="alert alert-danger">
+    <h3> Error </h3>
+    <p>{{mensajeError}}</p>
+</div>
+
+<app-tarjetas [items]="newSongs"></app-tarjetas>
+<!-- <div class="card-columns m-5 animated fadeIn">
+    <div *ngFor="let song of newSongs" class="card puntero">
+        <img class="card-img-top" [src]="song.images | noimage" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ song.name }}</h5>
+            <p class="card-text">
+                <span *ngFor="let artist of song.artists" class="badge badge-pill badge-primary">
+                    {{ song.name }}
+                </span>
+            </p>
+        </div>
+    </div>
+</div> -->
